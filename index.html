@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Jumbotron Header -->
+
+    <div class="jumbotron" id="title">
+
+        <h1 id="header-font">Anytime is Train Time</h1>
+        <h4>Choo Choo. Chee Chee.</h4>
+
+    </div>
+
+    <!-- Table of Train Schedule -->
+
+    <div id="table-schedule">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency (min)</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Form for input -->
+
+    <div id="table-form">
+
+        <form>
+            <div class="form-group">
+                <label for="trainName">Train Name</label>
+                <input type="email" class="form-control" id="trainName1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <input type="email" class="form-control" id="destination1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="trainTime">First Train Time (HH:mm - military time)</label>
+                <input type="email" class="form-control" id="trainTime1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="frequency">Frequency (min)</label>
+                <input type="email" class="form-control" id="frequency1" aria-describedby="emailHelp">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link to javascript file -->
+
+    <script src="assets/javascript/app.js"></script>
+
+</body>
