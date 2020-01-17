@@ -9,6 +9,19 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Added Moment JS -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+
     <title>Document</title>
 </head>
 
@@ -18,8 +31,8 @@
 
     <div class="jumbotron" id="title">
 
-        <h1 id="header-font">Anytime is Train Time</h1>
-        <h4>Choo Choo. Chee Chee.</h4>
+        <h1 class="header-font">Time has a wonderful way of showing us what really matters.</h1>
+        <h3 class="header-font"> Don't waste it, schedule your train.</h4id="header-font>
 
     </div>
 
@@ -27,7 +40,8 @@
 
     <div id="table-schedule">
         <table class="table table-hover">
-            <thead>
+            <thead class="table-primary">
+                <h3 class="header-font">Current Train Schedule</h3>
                 <tr>
                     <th scope="col">Train Name</th>
                     <th scope="col">Destination</th>
@@ -37,13 +51,6 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row"></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
             </tbody>
         </table>
     </div>
@@ -51,32 +58,34 @@
     <!-- Form for input -->
 
     <div id="table-form">
+        <h3 class="header-font">Add Train Information</h3>
 
         <form>
             <div class="form-group">
-                <label for="trainName">Train Name</label>
-                <input type="email" class="form-control" id="trainName1" aria-describedby="emailHelp">
+                <label id="name" for="trainName">Train Name</label>
+                <input type="text" class="form-control" id="trainName1" aria-describedby="emailHelp">
             </div>
             <div class="form-group">
-                <label for="destination">Destination</label>
-                <input type="email" class="form-control" id="destination1" aria-describedby="emailHelp">
+                <label id="dest" for="destination">Destination</label>
+                <input type="text" class="form-control" id="destination1" aria-describedby="emailHelp">
             </div>
             <div class="form-group">
-                <label for="trainTime">First Train Time (HH:mm - military time)</label>
-                <input type="email" class="form-control" id="trainTime1" aria-describedby="emailHelp">
+                <label id="time" for="trainTime">First Train Time (HH:mm - military time)</label>
+                <input type="text" class="form-control" id="trainTime1" aria-describedby="emailHelp">
             </div>
             <div class="form-group">
-                <label for="frequency">Frequency (min)</label>
-                <input type="email" class="form-control" id="frequency1" aria-describedby="emailHelp">
+                <label id="freq" for="frequency">Frequency (min)</label>
+                <input type="text" class="form-control" id="frequency1" aria-describedby="emailHelp">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" id="add-train">Submit</button>
     </div>
 
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
 
     <!-- Link to javascript file -->
-
+    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="assets/javascript/app.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
